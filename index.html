@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeri — Cinematic 3D Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <header class="nav">
+      <div class="logo">Yeri</div>
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#story">Flow</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" id="intro">
+        <p class="kicker">Tap to Pay on iPhone • Built for real merchants</p>
+        <h1>
+          Smooth.
+          <span>3D Rendered.</span>
+          Conversion-ready.
+        </h1>
+        <p class="lede">
+          Oryzo.ai tarzında sinematik geçişler ve gerçek zamanlı 3D sahne ile Yeri’nin ödeme anını canlıya taşı.
+        </p>
+      </section>
+
+      <section class="story" id="story">
+        <div class="render-shell">
+          <canvas id="hero-canvas" aria-label="Yeri cinematic 3d render"></canvas>
+          <div class="hud">Realtime 3D • Scroll-driven scene • 60fps target</div>
+        </div>
+
+        <article class="panel panel-a">
+          <p class="tag">01 / Prepare</p>
+          <h2>Tutarı gir. iPhone POS'a dönüşsün.</h2>
+          <p>Ek cihaz yok. Checkout ekranı birkaç dokunuşta hazır.</p>
+        </article>
+
+        <article class="panel panel-b">
+          <p class="tag">02 / Tap</p>
+          <h2>Müşteri kartı iPhone'a yaklaştırır.</h2>
+          <p>NFC tetiklenir, sahnede pulse ve light bloom ile ödeme anı canlanır.</p>
+        </article>
+
+        <article class="panel panel-c">
+          <p class="tag">03 / Confirm</p>
+          <h2>Onay, fiş ve satış tamam.</h2>
+          <p>QR/SMS receipt akışı ile işlem tek ekranda kapanır.</p>
+        </article>
+      </section>
+
+      <section class="features" id="contact">
+        <div>
+          <h3>Checkout + Receipt</h3>
+          <p>Uçtan uca satış akışı.</p>
+        </div>
+        <div>
+          <h3>Items / Tip / Tax</h3>
+          <p>Gelişmiş POS adımları.</p>
+        </div>
+        <div>
+          <h3>Merchant onboarding</h3>
+          <p>Hızlı aktivasyon ve ekip yönetimi.</p>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Yeri ile premium ödeme deneyimini hemen başlat.</h2>
+        <button>Demo Talep Et</button>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/three@0.164.1/build/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
